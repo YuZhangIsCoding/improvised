@@ -4,7 +4,7 @@
 for plotting 2D data on maps in Python.
 
 This repo is constructed for easier use of Basemap. A Statesmap class was built 
-in Statesmap.py, where customized settings was specified to cover all states
+in [Statesmap.py](https://github.com/YuZhangIsCoding/improvised/blob/master/Basemap/Statesmap.py), where customized settings was specified to cover all states
 in US (except DC and Puerto Rico). With this class object, one can simply input
 data as a dictionary and the final figure looks like the figure below:
 

@@ -5,7 +5,6 @@ from matplotlib.colorbar import ColorbarBase
 import pandas as pd
 import numpy as np
 from matplotlib.colors import rgb2hex, Normalize
-pd.options.display.max_rows = 20
 
 class Statesmap(object):
     def __init__(self, figsize = (8, 6)):
@@ -99,8 +98,8 @@ class Statesmap(object):
                 if shapedict['NAME'] == 'Hawaii' and float(shapedict['AREA']) > AREA_1:
                     seg = [(x + HI_OFFSET_X, y + HI_OFFSET_Y) for x, y in seg]
                 elif shapedict['NAME'] == 'Alaska' and float(shapedict['AREA']) > AREA_2:
-                    seg = [(x*AK_SCALE + AK_OFFSET_X, y*AK_SCALE + AK_OFFSET_Y)                           for x, y in seg]
-                color = rgb2hex(colors[statenames[nshape]]) if shapedict['NAME'] in colors else 'w'
+                    seg = [(x*AK_SCALE + AK_OFFSET_X, y*AK_SCALE + AK_OFFSET_Y) for x, y in seg]
+                color = rgb2hex(colors[statenames[nshape]]) if shapedict['NAME'] in colors else 'none'
                 poly = Polygon(seg, facecolor=color, edgecolor='gray', linewidth=.45)
                 self.ax.add_patch(poly)
     

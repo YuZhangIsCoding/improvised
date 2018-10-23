@@ -1,3 +1,3 @@
-#ipywidgets
+# ipywidgets
 
 ipywidgets are interactive HTML widgets for Jupyter notebooks and the IPython kernel.
